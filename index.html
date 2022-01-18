@@ -11,6 +11,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@500&display=swap"
         rel="stylesheet">
+        <!-- Animate.style css -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
     <title>Top Players</title>
     <style>
         /* Reset code */
@@ -61,10 +66,34 @@
         .menu a:first-child{
             color: lightgreen;
         }
-        .player-1{
+        .player{
             display: flex;
-            justify-content:space-between;
+            justify-content:space-around;
             align-items:center;
+        }
+        .player-photo{
+            width:500px;
+
+        }
+        .player-photo img{
+            width: 100%;
+        }
+        .player-info{
+            width:600px;
+        }
+        .player-info h3{
+            font-size:3rem;
+            text-transform: capitalize;
+            color:#333;
+            font-weight:700;
+            margin-bottom:1rem;
+        }
+        .player-info p{
+            font-size:1.6rem;
+            color:#333;
+            font-weight: 400;
+            line-height:2.5rem;
+            margin-bottom: 4rem;
         }
 
         /* font-family: 'Montserrat', sans-serif;
@@ -92,44 +121,65 @@
     <main>
         <section class="top-players">
             <div class="players">
-                <div class="player-1">
-                    <div class="player-photo">
+                <div class="player">
+                    <div class="player-photo animate__animated animate__slideInLeft">
                         <img src="./images/players/player-1.png" alt="">
                     </div>
-                    <div class="player-info">
-                        <h3>player-1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, aspernatur quasi sed iste maxime quisquam accusamus quidem tempora alias veniam, velit repellat inventore possimus ea, quibusdam hic voluptatibus harum aliquam consequatur in magnam? Impedit modi distinctio doloribus pariatur officia explicabo id, sit odit obcaecati cupiditate libero nobis, molestias dicta nisi similique possimus suscipit cumque! Nam blanditiis dolorum eius numquam quam animi consequuntur non accusamus voluptates ipsa qui architecto asperiores natus voluptatum, nostrum inventore hic repellendus. Minima ullam voluptas vitae consequuntur aliquid temporibus doloremque laborum sunt cumque fugit recusandae hic sequi mollitia eius, totam, accusamus, optio ratione saepe voluptatem. Omnis, eveniet.</p>
+                    <div class="player-info animate__animated animate__slideInRight ">
+                        <h3 class="animate__animated animate__bounce">player-1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, aspernatur quasi sed iste maxime quisquam accusamus quidem tempora alias veniam, velit repellat inventore possimus ea, quibusdam hic voluptatibus harum aliquam consequatur in magnam? Impedit modi distinctio doloribus pariatur officia explicabo id, sit odit obcaecati cupiditate libero nobis, molestias dicta nisi similique possimus suscipit cumque! Nam blanditiis dolorum eius numquam quam animi consequuntur non accusamus voluptates ipsa qui architecto asperiores natus voluptatum, nostrum inventore hic repellendus. Minima ullam voluptas vitae consequuntur aliquid temporibus doloremque laborum sunt cumque fugit recusandae hic sequi mollitia eius, totam, accusamus, optio ratione saepe voluptatem. Omnis, eveniet.</p>                      
                     </div>
 
-                </div>
-
-              
+                </div>              
                
             </div>
             <div class="player">
-                <img src="./images/players/player-2.png" alt="">
-                <h3>player-2</h3>
-                <p>Cupiditate similique voluptatem amet molestias? Nemo nulla molestias maiores corporis eos iste sed accusamus sapiente facilis? Molestias soluta hic dolorem illo magnam iure et iusto exercitationem blanditiis aliquam saepe, esse iste odio laboriosam atque vel ipsa neque in aut ducimus animi eligendi enim possimus culpa? Eos aliquid, id laborum placeat harum esse dolor quas, at, quos numquam tempora doloribus sed repellat ullam corporis nesciunt ab molestias eaque nihil optio provident nisi error sint beatae. Quibusdam corrupti eveniet dolorem quaerat. Consequatur suscipit voluptatum provident modi magnam. Quas corrupti in ab. Porro dolore illum alias veritatis sint asperiores quis facilis adipisci temporibus.</p>
+               
+                <div class="player-info animate__animated animate__slideInLeft">
+                    <h3>player-2</h3>
+                    <p>Cupiditate similique voluptatem amet molestias? Nemo nulla molestias maiores corporis eos iste sed accusamus sapiente facilis? Molestias soluta hic dolorem illo magnam iure et iusto exercitationem blanditiis aliquam saepe, esse iste odio laboriosam atque vel ipsa neque in aut ducimus animi eligendi enim possimus culpa? Eos aliquid, id laborum placeat harum esse dolor quas, at, quos numquam tempora doloribus sed repellat ullam corporis nesciunt ab molestias eaque nihil optio provident nisi error sint beatae. Quibusdam corrupti eveniet dolorem quaerat. Consequatur suscipit voluptatum provident modi magnam. Quas corrupti in ab. Porro dolore illum alias veritatis sint asperiores quis facilis adipisci temporibus.</p>
+                </div>
+                <div class="player-photo animate__animated animate__slideInRight">
+                    <img src="./images/players/player-2.png" alt="">
+                </div>
             </div>
             <div class="player">
-                <img src="./images/players/player-3.png" alt="">
-                <h3>player-3</h3>
-                <p>Ut, minus quibusdam est soluta sunt aliquam laudantium eius corporis nulla, impedit et odio aspernatur maiores iure provident saepe reprehenderit tempora ea sequi dolorum voluptates amet! Sequi eius assumenda minus maiores eum ipsum quo fugiat iste magnam tenetur, numquam deserunt perspiciatis recusandae labore veritatis consectetur nisi exercitationem nam facilis repudiandae placeat aliquid distinctio suscipit voluptates. Blanditiis esse voluptatem tenetur corrupti nam, eius nihil. Officiis a facilis ipsa sapiente perferendis mollitia possimus accusantium modi magni architecto dolorem pariatur id dolores laudantium repellat impedit facere magnam, eum accusamus cupiditate unde. Quaerat dolorum atque hic maxime ut ipsum beatae quam, a ullam quos.</p>
+                <div class="player-photo animate__animated animate__slideInLeft">
+                    <img src="./images/players/player-3.png" alt="">
+                </div>
+                <div class="player-info animate__animated animate__slideInRight">
+                    <h3>player-3</h3>
+                    <p>Ut, minus quibusdam est soluta sunt aliquam laudantium eius corporis nulla, impedit et odio aspernatur maiores iure provident saepe reprehenderit tempora ea sequi dolorum voluptates amet! Sequi eius assumenda minus maiores eum ipsum quo fugiat iste magnam tenetur, numquam deserunt perspiciatis recusandae labore veritatis consectetur nisi exercitationem nam facilis repudiandae placeat aliquid distinctio suscipit voluptates. Blanditiis esse voluptatem tenetur corrupti nam, eius nihil. Officiis a facilis ipsa sapiente perferendis mollitia possimus accusantium modi magni architecto dolorem pariatur id dolores laudantium repellat impedit facere magnam, eum accusamus cupiditate unde. Quaerat dolorum atque hic maxime ut ipsum beatae quam, a ullam quos.</p>
+                </div>
+                
+            </div>
+            <div class="player">               
+                <div class="player-info animate__animated animate__slideInLeft ">
+                    <h3>player-4</h3>
+                    <p>Magni deleniti, asperiores blanditiis pariatur veniam beatae atque laudantium illum, nesciunt cumque omnis? Consectetur, eaque possimus laborum soluta impedit consequuntur accusantium cum assumenda, animi blanditiis officiis unde totam at, nisi tenetur pariatur modi voluptas et deserunt! Facilis molestiae excepturi molestias ratione sed qui porro est deleniti ipsam saepe eligendi nihil iste praesentium magni delectus totam, natus hic officia voluptatum quae voluptas? Dicta quibusdam dolorum expedita autem exercitationem reiciendis aliquam quo totam tempore eum consectetur, officiis fugiat! Saepe facere ipsum sed cupiditate aliquam ut, voluptates quasi! Minus id soluta alias sapiente deserunt quod, voluptas necessitatibus incidunt ipsa, cumque laboriosam. Itaque, asperiores.</p>
+                </div>
+                <div class="player-photo animate__animated animate__slideInRight">
+                    <img src="./images/players/player-4.png" alt="">
+                </div>
             </div>
             <div class="player">
-                <img src="./images/players/player-4.png" alt="">
-                <h3>player-4</h3>
-                <p>Magni deleniti, asperiores blanditiis pariatur veniam beatae atque laudantium illum, nesciunt cumque omnis? Consectetur, eaque possimus laborum soluta impedit consequuntur accusantium cum assumenda, animi blanditiis officiis unde totam at, nisi tenetur pariatur modi voluptas et deserunt! Facilis molestiae excepturi molestias ratione sed qui porro est deleniti ipsam saepe eligendi nihil iste praesentium magni delectus totam, natus hic officia voluptatum quae voluptas? Dicta quibusdam dolorum expedita autem exercitationem reiciendis aliquam quo totam tempore eum consectetur, officiis fugiat! Saepe facere ipsum sed cupiditate aliquam ut, voluptates quasi! Minus id soluta alias sapiente deserunt quod, voluptas necessitatibus incidunt ipsa, cumque laboriosam. Itaque, asperiores.</p>
+                <div class="player-photo animate__animated animate__slideInLeft">
+                    <img src="./images/players/player-5.png" alt="">
+                </div>
+                <div class="player-info animate__animated animate__slideInRight">
+                    <h3>player-5</h3>
+                    <p>Dolor, illum dolorem esse laudantium repudiandae provident minus quasi neque enim modi vitae quis aliquam officia a expedita accusantium quas, quam accusamus! Earum mollitia est aliquam quis? Error quod quam dolor amet modi? Unde sint quaerat exercitationem aliquam libero labore itaque quos ab incidunt voluptate. Deserunt corporis nam excepturi ipsa assumenda, quo mollitia quis earum non nihil vero eligendi necessitatibus ullam deleniti animi consectetur adipisci dicta unde eveniet nobis doloribus et, iusto officiis suscipit. Ab error rem, aut voluptates eum fugiat. Nihil magnam laudantium quae quo minima, expedita est a, molestiae obcaecati quia placeat nesciunt, incidunt nobis voluptates doloremque dolorem?</p>
+                </div>               
             </div>
             <div class="player">
-                <img src="./images/players/player-5.png" alt="">
-                <h3>player-5</h3>
-                <p>Dolor, illum dolorem esse laudantium repudiandae provident minus quasi neque enim modi vitae quis aliquam officia a expedita accusantium quas, quam accusamus! Earum mollitia est aliquam quis? Error quod quam dolor amet modi? Unde sint quaerat exercitationem aliquam libero labore itaque quos ab incidunt voluptate. Deserunt corporis nam excepturi ipsa assumenda, quo mollitia quis earum non nihil vero eligendi necessitatibus ullam deleniti animi consectetur adipisci dicta unde eveniet nobis doloribus et, iusto officiis suscipit. Ab error rem, aut voluptates eum fugiat. Nihil magnam laudantium quae quo minima, expedita est a, molestiae obcaecati quia placeat nesciunt, incidunt nobis voluptates doloremque dolorem?</p>
-            </div>
-            <div class="player">
-                <img src="./images/players/player-6.png" alt="">
-                <h3>player-6</h3>
-                <p>Et, molestias voluptatibus. Corrupti ad dicta in deleniti commodi amet pariatur est beatae, delectus porro consectetur quia modi dignissimos consequatur officia ducimus, voluptatibus sapiente vitae exercitationem, maiores vero possimus autem! Veritatis vel maiores inventore architecto vero sequi debitis dolorem unde nemo est doloremque consequuntur facilis ad, repudiandae ipsa deleniti, magnam quos iste eveniet odio. Sapiente perspiciatis voluptates ducimus blanditiis, dicta laboriosam ab totam doloremque consectetur obcaecati architecto enim ullam reprehenderit. Porro itaque saepe temporibus, quis eveniet iste odit provident consequatur quos dolorem ducimus harum veniam rem ratione? Eos, ad eum consequatur dolore architecto, laudantium sequi blanditiis mollitia rem quis ipsum.</p>
+               
+                <div class="player-info animate__animated animate__slideInLeft">
+                    <h3>player-6</h3>
+                    <p>Et, molestias voluptatibus. Corrupti ad dicta in deleniti commodi amet pariatur est beatae, delectus porro consectetur quia modi dignissimos consequatur officia ducimus, voluptatibus sapiente vitae exercitationem, maiores vero possimus autem! Veritatis vel maiores inventore architecto vero sequi debitis dolorem unde nemo est doloremque consequuntur facilis ad, repudiandae ipsa deleniti, magnam quos iste eveniet odio. Sapiente perspiciatis voluptates ducimus blanditiis, dicta laboriosam ab totam doloremque consectetur obcaecati architecto enim ullam reprehenderit. Porro itaque saepe temporibus, quis eveniet iste odit provident consequatur quos dolorem ducimus harum veniam rem ratione? Eos, ad eum consequatur dolore architecto, laudantium sequi blanditiis mollitia rem quis ipsum.</p>
+                </div>
+                <div class="player-photo animate__animated animate__slideInRight">
+                    <img src="./images/players/player-6.png" alt="">
+                </div>
             </div>
         </section>
     </main>
